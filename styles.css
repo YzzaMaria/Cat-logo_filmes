@@ -1,0 +1,119 @@
+
+    :root {
+      --bg-light: #f8fafc;
+      --bg-dark: #0f172a;
+      --text-light: #0f172a;
+      --text-dark: #f8fafc;
+      --primary: #2563eb;
+      --secondary: #94a3b8;
+      --radius: .5rem;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background .3s, color .3s;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    form, .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    input, select, button {
+      padding: .5rem .75rem;
+      font-size: 1rem;
+      border: 1px solid var(--secondary);
+      border-radius: var(--radius);
+    }
+
+    button {
+      background: var(--primary);
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+
+    button.secondary {
+      background: var(--secondary);
+      color: #000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: .75rem;
+      border-bottom: 1px solid var(--secondary);
+      text-align: left;
+    }
+
+    th {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    img.poster {
+      width: 80px;
+      height: auto;
+      border-radius: var(--radius);
+    }
+
+    .table-striped tbody tr:nth-child(odd) {
+      background: rgba(0, 0, 0, .03);
+    }
+
+    .dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .dark-mode table th {
+      background: #1e293b;
+    }
+
+    .dark-mode input, .dark-mode select {
+      background: #1e293b;
+      color: #fff;
+      border-color: #475569;
+    }
+
+    .dark-mode button {
+      background: #3b82f6;
+      color: #fff;
+    }
+
+    @media(max-width:600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: .75rem;
+        font-weight: bold;
+      }
+    }

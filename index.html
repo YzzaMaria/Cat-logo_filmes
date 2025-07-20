@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">  
+  <title>Catálogo de Filmes</title> 
+   </head>
+<body>
+  <h1>Catálogo de Filmes</h1>
+
+  <form id="movieForm">
+    <input type="text" id="title" placeholder="Título" required>
+    <input type="number" id="year" placeholder="Ano" min="1888" required>
+    <input type="number" id="rating" placeholder="Nota (0-10)" min="0" max="10" step="0.1" required>
+    <input type="text" id="genre" placeholder="Gênero">
+    <input type="url" id="poster" placeholder="URL do Cartaz">
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div class="controls">
+    <input type="text" id="searchTitle" placeholder="Pesquisar por título">
+    <button class="secondary" onclick="searchByTitle()">Buscar</button> 
+    <input type="number" id="searchYear" placeholder="Pesquisar por ano">
+    <button class="secondary" onclick="searchByYear()">Buscar</button>
+
+    <input type="number" id="searchRating" placeholder="Pesquisar por nota">
+    <button class="secondary" onclick="searchByRating()">Buscar</button>
+    
+    <button id="toggleStyle" onclick="toggleTableStyle()">Alternar estilo</button> 
+    <table id="movieTable">
+    <thead>
+      <tr>
+        <th>Cartaz</th>
+        <th>Título</th>
+        <th>Ano</th>
+        <th>Nota</th>
+        <th>Gênero</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  </div> 
+  <script src="scripts.js"></script>
+</body>
