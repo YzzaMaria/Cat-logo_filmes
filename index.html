@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css">  
   <title>Catálogo de Filmes</title> 
-   </head>
+</head>
 <body>
   <h1>Catálogo de Filmes</h1>
 
@@ -20,27 +20,28 @@
 
   <div class="controls">
     <input type="text" id="searchTitle" placeholder="Pesquisar por título">
-    <button class="secondary" onclick="searchByTitle()">Buscar</button> 
+    <button class="secondary" id="searchTitleBtn">Buscar</button> 
     <input type="number" id="searchYear" placeholder="Pesquisar por ano">
-    <button class="secondary" onclick="searchByYear()">Buscar</button>
+    <button class="secondary" id="searchYearBtn">Buscar</button>
 
     <input type="number" id="searchRating" placeholder="Pesquisar por nota">
-    <button class="secondary" onclick="searchByRating()">Buscar</button>
-    
-    <button id="toggleStyle" onclick="toggleTableStyle()">Alternar estilo</button> 
+    <button class="secondary" id="searchRatingBtn">Buscar</button>
+
+    <button id="toggleStyle">Alternar estilo</button> 
     <table id="movieTable">
-    <thead>
-      <tr>
-        <th>Cartaz</th>
-        <th>Título</th>
-        <th>Ano</th>
-        <th>Nota</th>
-        <th>Gênero</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+      <thead>
+        <tr>
+          <th>Cartaz</th>
+          <th>Título</th>
+          <th>Ano</th>
+          <th>Nota</th>
+          <th>Gênero</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div> 
   <script src="scripts.js"></script>
 </body>
+</html>
