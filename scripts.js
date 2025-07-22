@@ -17,9 +17,7 @@ function renderTable(list) {
       </td>`;
     tbody.appendChild(tr);
   });
-
-  // Add event listeners to all delete buttons
-  document.querySelectorAll('.delete-btn').forEach(button => {
+ document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', function() {
       const index = parseInt(this.getAttribute('data-index'));
       removeMovie(index);
@@ -75,11 +73,14 @@ function toggleTableStyle() {
   }
 }
 
-// Add event listener for the style toggle button if it exists
 const styleToggleBtn = document.querySelector('.style-toggle-btn');
 if (styleToggleBtn) {
   styleToggleBtn.addEventListener('click', toggleTableStyle);
 }
+document.getElementById('searchTitleBtn').addEventListener('click', searchByTitle);
+document.getElementById('searchYearBtn').addEventListener('click', searchByYear);
+document.getElementById('searchRatingBtn').addEventListener('click', searchByRating);
+document.getElementById('toggleStyle').addEventListener('click', toggleTableStyle); 
 
 renderTable(movies);
         
