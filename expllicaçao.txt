@@ -1,0 +1,9 @@
+EXPLICAÇÕES; 
+1-ESTRUTURA BASICA(declara o arquivo html) 
+1.1-FORMULARIO DE ADIÇÃO(uso do required para validação, inputs comuns e especificos como number/url, atributos de controle de valors(min,max,step) 
+1.2-uso ids para campos e propriedades do objeto filme
+1.3-TABELAS( de exibição(thead e tbody) uso data-label no css 
+(tambem deixei uma tabela vazia para ser preenchida com Javascript) 
+2-CSS 
+customização de proprietades e reutilização de valores,implementaçao do dark mode 
+@.@
