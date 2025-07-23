@@ -6,4 +6,36 @@ EXPLICAÇÕES;
 (tambem deixei uma tabela vazia para ser preenchida com Javascript) 
 2-CSS 
 customização de proprietades e reutilização de valores,implementaçao do dark mode 
-@.@
+2.2-RESPONSIVIDADE(transformação de tabela em cards em dispositivos moveis) uso do data-label para rotulos,breakpoint para dispositivos menores 
+2.3-DARk MODE(alternancia de temas apenas com classe css) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
