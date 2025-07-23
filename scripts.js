@@ -72,11 +72,6 @@ function toggleTableStyle() {
     movieTable.classList.remove("table-striped");
   }
 }
-
-const styleToggleBtn = document.querySelector('.style-toggle-btn');
-if (styleToggleBtn) {
-  styleToggleBtn.addEventListener('click', toggleTableStyle);
-}
 document.getElementById('searchTitleBtn').addEventListener('click', searchByTitle);
 document.getElementById('searchYearBtn').addEventListener('click', searchByYear);
 document.getElementById('searchRatingBtn').addEventListener('click', searchByRating);
